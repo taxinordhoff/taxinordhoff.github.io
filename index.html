@@ -129,8 +129,13 @@ unseren Schutz.
                                         <h3>Ihre Anfrage</h3>
                                     </header>
                                     <div class="content">
+                                    <form
+                                      action="https://formspree.io/f/mjvpdzyn"
+                                      method="POST"
+                                    >
 
-                                        <form method="post" action="#">
+
+                                            
                                             <div class="fields">
                                                 <div class="field half">
                                                     <label for="name">Name</label>
@@ -138,34 +143,24 @@ unseren Schutz.
                                                 </div>
                                                 <div class="field half">
                                                     <label for="email">E-Mail</label>
-                                                    <input type="email" name="email" id="email" value="" />
+                                                    <input type="email" name="_replyto" id="email" value="" />
                                                 </div>
                                                 <div class="field">
                                                     <label for="kategorie">Fahrt</label>
                                                     <select name="kategorie" id="kategorie">
-                                                        <option value="">- Kategorie -</option>
-                                                        <option value="1">Arzttermin</option>
-                                                        <option value="2">Flughafenfahrt/-abholung</option>
-                                                        <option value="3">Corona-Impfertmin</option>
-                                                        <option value="4">Andere</option>
+                                                        <option value="keine-angabe">- Kategorie -</option>
+                                                        <option value="arzttermin">Arzttermin</option>
+                                                        <option value="flughafenfahrt">Flughafenfahrt/-abholung</option>
+                                                        <option value="corona-impftermin">Corona-Impftermin</option>
+                                                        <option value="andere">Andere</option>
                                                     </select>
                                                 </div>
-                                                <div class="field third">
-                                                    <input type="radio" id="priority-normal" name="priority" checked />
-                                                    <label for="priority-normal">Allgemeine Anfrage</label>
-                                                </div>
-                                                <div class="field third">
-                                                    <input type="radio" id="priority-high" name="priority" />
-                                                    <label for="priority-high">Dringende Anfrage</label>
-                                                </div>
+                                                
                                                 <div class="field">
                                                     <label for="message">Nachricht</label>
                                                     <textarea name="message" id="message" rows="6"></textarea>
                                                 </div>
-                                                <div class="field">
-                                                    <input type="checkbox" id="copy" name="copy" checked />
-                                                    <label for="copy">Senden Sie mir eine Kopie meiner Anfrage</label>
-                                                </div>
+                                                
                                             </div>
                                             <ul class="actions">
                                                 <li><input type="submit" name="submit" id="submit" value="Abschicken" /></li>
